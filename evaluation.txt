@@ -1,0 +1,39 @@
+C:\Users\moham\OneDrive\Desktop\yolo_project>C:\Users\moham\AppData\Local\Programs\Python\Python310\python.exe evaluate.py
+
+============================================================
+  CRACK DETECTION — Model Evaluation
+============================================================
+  Weights:  C:\Users\moham\OneDrive\Desktop\yolo_project\runs\segment\runs\crack_detection3\weights\best.pt
+  Dataset:  C:\Users\moham\OneDrive\Desktop\yolo_project\data.yaml
+  Split:    val
+  Conf:     0.25
+  IoU:      0.5
+============================================================
+
+Ultralytics 8.4.34  Python-3.10.0 torch-2.5.1+cu121 CUDA:0 (NVIDIA GeForce RTX 3070, 8192MiB)
+YOLOv12n-seg summary (fused): 172 layers, 2,779,387 parameters, 0 gradients, 9.1 GFLOPs
+val: Fast image access  (ping: 0.00.0 ms, read: 877.0252.3 MB/s, size: 98.6 KB)
+val: Scanning C:\Users\moham\OneDrive\Desktop\yolo_project\datasets\labels\val.cache... 193 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 193/193  0.0s
+val: C:\Users\moham\OneDrive\Desktop\yolo_project\datasets\images\val\FLIR1426.jpg: 1 duplicate labels removed
+val: C:\Users\moham\OneDrive\Desktop\yolo_project\datasets\images\val\FLIR1427.jpg: 1 duplicate labels removed
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 8% ╸─────────── 1/13 1.7s/it 0.5s<21                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 15% ━╸────────── 2/13 1.5it/s 0.8s<7                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 23% ━━╸───────── 3/13 2.0it/s 1.1s<5                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 31% ━━━╸──────── 4/13 2.3it/s 1.5s<3                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 38% ━━━━╸─────── 5/13 3.6it/s 1.6s<2                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 46% ━━━━━╸────── 6/13 5.0it/s 1.7s<1                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 54% ━━━━━━────── 7/13 6.0it/s 1.8s<1                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 62% ━━━━━━━───── 8/13 6.7it/s 2.0s<0                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 69% ━━━━━━━━──── 9/13 7.1it/s 2.1s<0                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 77% ━━━━━━━━━─── 10/13 7.2it/s 2.2s<                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 85% ━━━━━━━━━━── 11/13 7.7it/s 2.3s<                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 92% ━━━━━━━━━━━─ 12/13 7.9it/s 2.5s<                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 13/13 5.2it/s 2.5s
+                   all        193        194       0.99      0.995      0.993      0.853       0.99      0.995      0.993      0.759
+Speed: 1.4ms preprocess, 4.6ms inference, 0.0ms loss, 1.4ms postprocess per image
+Saving C:\Users\moham\OneDrive\Desktop\yolo_project\runs\segment\val\predictions.json...
+Results saved to C:\Users\moham\OneDrive\Desktop\yolo_project\runs\segment\val
+
+============================================================
+  EVALUATION RESULTS
+============================================================
+  Box mAP50:    0.9934  (99.34%)
+  Mask mAP50:   0.9934  (99.34%)  ← PRIMARY
+  Precision:    0.9897  (98.97%)
+  Recall:       0.9948  (99.48%)
+  F1 Score:     0.9923  (99.23%)
+============================================================
+
+  📊 Academic Performance Guide:
+  Mask mAP50 = 99.3% → Excellent ✅ — Publication-level Segmentation!
+
+  Results saved to: C:\Users\moham\OneDrive\Desktop\yolo_project\logs\eval_results_val.json
+  PR curve saved to: C:\Users\moham\OneDrive\Desktop\yolo_project\logs\pr_curve_val.png

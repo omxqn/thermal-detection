@@ -1,0 +1,19 @@
+# ============================================================
+#  data.yaml — YOLO Dataset Configuration for Crack Detection
+#  Update the 'path' field to match your actual project root.
+# ============================================================
+
+# Absolute path to the dataset root (change this to match your machine)
+path: C:/Users/moham/OneDrive/Desktop/yolo_project/datasets
+
+# Relative paths to image subsets (relative to 'path' above)
+train: images/train
+val:   images/val
+test:  images/test
+
+# Number of classes
+nc: 1
+
+# Class names (only one class: crack)
+names:
+  0: crack

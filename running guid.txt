@@ -1,0 +1,6 @@
+click on path from explorer and type cmd
+
+
+
+then write 
+streamlit run app.py

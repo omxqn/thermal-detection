@@ -1,1 +1,40 @@
-streamlit
+# ============================================================
+#  requirements.txt — Crack Detection YOLO Pipeline
+#  Python 3.10+ recommended
+#  Install with: pip install -r requirements.txt
+# ============================================================
+
+# ---- Core YOLO Framework (Ultralytics) ----
+ultralytics>=8.3.70         # v8.3.70+ includes official YOLOv12 support
+
+# ---- Deep Learning Backend (CUDA 13.0 Support) ----
+# IMPORTANT: Install PyTorch with CUDA 13.0 (Nightly) via:
+# pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu130
+torch>=2.9.0
+torchvision>=0.20.0
+torchaudio>=2.9.0
+
+# ---- Image Processing ----
+opencv-python-headless>=4.9.0        # Image read/write, drawing bounding boxes
+Pillow>=10.0.0              # PIL image support
+albumentations>=1.4.0       # Advanced data augmentation
+
+# ---- Data Science & Visualization ----
+numpy>=1.26.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+pandas>=2.1.0
+scikit-learn>=1.4.0         # Metrics, confusion matrix
+
+# ---- Export & Deployment ----
+onnx>=1.16.0                # ONNX model export
+onnxruntime-gpu>=1.18.0     # ONNX GPU inference
+# tensorrt — install separately via NVIDIA installer (not pip)
+
+# ---- Utilities ----
+streamlit>=1.32.0           # Dashboard / UI framework
+tqdm>=4.66.0                # Progress bars
+PyYAML>=6.0                 # YAML config parsing
+requests>=2.31.0
+psutil>=5.9.0               # System monitoring during training
+tensorboard>=2.16.0         # Training visualization
