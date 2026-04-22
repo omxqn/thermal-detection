@@ -1,0 +1,11 @@
+{
+    "weights": "C:\\Users\\moham\\OneDrive\\Desktop\\yolo_project\\runs\\segment\\runs\\crack_detection3\\weights\\best.pt",
+    "split": "val",
+    "conf_threshold": 0.25,
+    "iou_threshold": 0.5,
+    "box_mAP50": 0.993397,
+    "mask_mAP50": 0.993397,
+    "precision": 0.989744,
+    "recall": 0.994845,
+    "f1_score": 0.992288
+}
