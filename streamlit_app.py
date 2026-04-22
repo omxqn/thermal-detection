@@ -1,5 +1,5 @@
 import streamlit as st
-
+import cv2
 import numpy as np
 from PIL import Image
 from ultralytics import YOLO
@@ -164,7 +164,7 @@ with tab2:
             annotated_frame = results[0].plot(masks=show_masks)
             
             # Convert BGR to RGB
-            annotated_frame = annotated_frame[:, :, ::-1]
+            annotated_frame = cv2.cvtColor(annotated_frame, cv2.COLOR_BGR2RGB)
             st_frame.image(annotated_frame, width="stretch")
             
             frame_idx += 1
@@ -200,7 +200,7 @@ with tab3:
                     end_time = time.time()
                     
                     annotated_frame = results[0].plot(masks=show_masks)
-                    annotated_frame = annotated_frame[:, :, ::-1]
+                    annotated_frame = cv2.cvtColor(annotated_frame, cv2.COLOR_BGR2RGB)
                     
                     st_frame.image(annotated_frame, width="stretch")
                     
