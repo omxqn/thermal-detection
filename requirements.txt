@@ -15,7 +15,7 @@ torchvision>=0.20.0
 torchaudio>=2.9.0
 
 # ---- Image Processing ----
-opencv-python-headless>=4.9.0        # Image read/write, drawing bounding boxes
+opencv-python-headless        # Image read/write, drawing bounding boxes
 Pillow>=10.0.0              # PIL image support
 albumentations>=1.4.0       # Advanced data augmentation
 
